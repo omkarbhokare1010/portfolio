@@ -1,49 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="portfo.css">
-</head>
-<body>
-    <header class="header">
-        <a href="#" class="logo">Omkar.</a>
-        <nav class="navbar">
-<a href="#" class="active">Home</a>
-<a href="about.html">About</a>
-<a href="pro.html">My Project</a>
-<a href="portfo.html">portfolio</a>
-<a href="12forms.html">Contact </a>            
-        </nav>
-    </header>
 
-<section class="home">
-    <div class="home-content">
-        <h1>HI, I'm Omkar Bhokare</h1>
-        <h3> Froentend Developer</h3>
-        <p>Hi, I'm Omkar, a second-year student pursuing a Bachelor's in Computer Applications (BCA). I'm passionate about web development and continuously honing my skills in HTML, CSS, JavaScript, and other programming languages.</p>
-<div class="btn-box">
-    <a href="#">Hire Me</a>
-    <a href="#">Let's Talk</a>
-</div>
-</div>
-<div class="home-sci">
-    <!-- isatagram -->
- <a href="https://instagram.com/omii___9696?igshid=NTc4MTIwNjQ2YQ=="><i class="fa-brands fa-square-instagram"></i></a> 
- <!-- facebook -->
-  <a href="https://wa.me/qr/YC64IE7TVA53E1"><i class="fa-brands fa-square-whatsapp"></i></a> 
-  <!-- linkden -->
-   <a href="https://www.linkedin.com/in/omkar-bhokare-a4975b246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
-   <!-- over circle buttons -->
-</div>
-<span class="home-imgHover"></span>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css " >
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: poppins;
+                align-items: center;
+                background: url(omii.png);
+            }
+            #about-section {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content:space-evenly;
+                align-items: center;
+               
+            }
+            
+            .about-right {
+                width: 54%;
+            }
 
-</section>
-</body>
+            .about-right ul li {
+                display: flex;
+                align-items: center;
+            }
+
+            .about-right h1 {
+                color: #00abf0;
+                font-size: 37px;
+                margin-bottom: 5px;
+            }
+
+            .about-right p {
+                color: #eceaea;
+                line-height: 26px;
+                font-size: 15px;
+            }
+
+            .about-right .address {
+                margin: 25px 0;
+            }
+
+            .about-right .address ul li {
+                margin-bottom: 5px;
+            }
+
+            .address .address-logo {
+                margin-right: 15px;
+                color:  #00abf0;
+            }
+
+            .address .saprater {
+                margin: 0 35px;
+            }
+
+            .about-right .expertise ul {
+                width: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .expertise h3 {
+                margin-bottom: 10px;
+            }
+
+            .expertise .expertise-logo {
+                font-size: 19px;
+                margin-right: 10px;
+                color:  #00abf0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section id="about-section" >
+            <!-- about left  -->
+            
+
+            <!-- about right  -->
+            <div class="about-right">
+                <h4>My Story</h4>
+                <h1>About Me</h1>
+                <p>Hi, I'm Omkar, a second-year student pursuing a Bachelor's in Computer Applications (BCA). I'm passionate about web development and continuously honing my skills in HTML, CSS, JavaScript, and other programming languages.
+                </p>
+                <br>
+               <h1>Passion</h1> 
+             <p>My passion extends beyond web development—I aspire to delve into the exciting world of AI technology and its endless possibilities.</p>
+                <div class="address">
+                    <ul>
+                        <li>
+                            <span class="address-logo">
+                                <i class="fas fa-paper-plane"></i>
+                            </span>
+                            <p>Address</p>
+                            <span class="saprater">:</span>
+                            <p>pune, maharashtra, India</p>
+                        </li>
+                        <li>
+                            <span class="address-logo">
+                                <i class="fas fa-phone-alt"></i>
+                            </span>
+                            <p>Phone No</p>
+                            <span class="saprater">:</span>
+                            <p>+91 7757872897</p>
+                        </li>
+                        <li>
+                            <span class="address-logo">
+                                <i class="far fa-envelope"></i>
+                            </span>
+                            <p>Email ID</p>
+                            <span class="saprater">:</span>
+                            <p>omkarbhokare1010@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="expertise">
+                    <h3 style="color:  #00abf0;">My Expertise</h3>
+                    <ul>
+                        <li>
+                            <span class="expertise-logo">
+                                <i class="fab fa-html5"></i>
+                            </span>
+                            <p>HTML</p>
+                        </li>
+                        <li>
+                            <span class="expertise-logo">
+                                <i class="fab fa-css3-alt"></i>
+                            </span>
+                            <p>CSS</p>
+                        </li>
+                        <li>
+                            <span class="expertise-logo">
+                                <i class="fab fa-node-js"></i>
+                            </span>
+                            <p>Java Script</p>
+                        </li>
+                        <li>
+                            <span class="expertise-logo">
+                                <i class="fab fa-bootstrap"></i>
+                            </span>
+                            <p>Bootstrap</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <button class="btn btn-outline-success"  type="text"> <a href="portfo.html">go back</a></button>
+
+    </body>
+
 </html>
