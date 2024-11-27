@@ -1,0 +1,252 @@
+*{
+    /* this is for font  style by google fonts*/
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    overflow:fixed;
+    /* this overflow is for scroll bar when the content is over-flow (scroll kar sakte hai or cancle kar sakte hai) */
+    /* if we use hidden we cant scroll the content */
+}
+.main{
+    display: flex;
+    height: 100vh;/*vh is view port height  */
+    padding: 0.5rem;
+}
+
+.sidebar{
+background-color:#232323;
+width: 250px;
+border-radius: 1.1%;
+/* 1 rem=16px */
+margin-right: 0.5rem;
+}
+
+.main-content{
+background-color: #121212;
+ flex: 1;/*(remaing content width sould be given to me) */
+ border-radius: 1.1%;
+/* 1 rem=16px */
+overflow: auto;
+/* (scroll bar will be added when required in content page) */
+padding: 1rem 1rem 1rem 1rem;
+
+}
+.main-content:hover{
+   
+    font-size: large;
+    
+
+    transition: 5s;
+}
+
+.music-player{
+background-color:black;
+position: fixed;
+bottom: 0;
+width: 100%;
+height: 72px;
+}
+
+
+a{
+    /* we are cangin the text-decourartion(underline disable)of anchor tag by text-decoration  */
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem ;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem;
+}
+/* we are making hower for home and search */
+.nav-option:hover{
+   border-radius: 2rem;
+    opacity: 1;
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+/* libary content from below */
+.libary{
+    background-color: #121212;
+    border-radius: 1%;
+       height: 100%; 
+       margin-top: 0.5rem;
+       padding: 0.5rem 0.75rem ; 
+    color: #000; }
+    .options{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        opacity: 0.7;
+      
+    }
+
+.lib-options img{
+  height: 1.25rem;
+  width: 1.25rem;
+
+    }
+
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+.icons i{
+    opacity: 0.5;
+    margin-right: 1rem;
+    }
+ .icons i:hover{
+        opacity: 1;
+        
+}
+.box{
+    background-color:#232323;
+    height: 8rem;
+    border-radius: 0.75%;
+    margin: 0.5rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+}
+.box-p1{
+    background-color: #232323;
+    font-size: 1rem;
+   font-weight: 500;
+   color: aquamarine;
+
+}
+.box-p2{
+    background-color: #232323;
+    font-size:0.85rem;
+    opacity: 0.9;
+}
+.badge{
+    background-color:#f0f3f0 ;
+    border: none;
+    border-radius: 100%;
+    padding: 0.2rem 1rem;
+    font-weight: 700;
+    margin: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+    opacity: 0.7;
+    
+    
+      
+}
+.badge:hover{
+    opacity: 1;
+
+}
+
+
+.sticky-nav{
+    position:sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+} 
+.sticky-nav-icons img{
+   margin-left: 0.75rem;
+}
+.sticky-nav-options{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.sticky-nav-options button{
+margin-right: 1rem;
+
+}
+/* when screenhits 1000px and below premium option will hide */
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex wrap is used to wrap the images at the small screen size */
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+    
+}
+.card-title{
+    font-weight: 600;
+
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+.txt{
+    margin-top: 1rem 1rem 1rem 1rem;
+}
+.footer{
+   
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 1;
+}
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album{
+    width: 25%;
+}
+.player{
+    width: 50%;
+
+}
+ .controls{
+    width: 25%;
+ }
+
+ .player-control-icon{
+    height: 1rem;
+    margin-right: 2rem;
+    opacity: 0.4;
+ }
+ .player-control-icon:hover{
+opacity: 1;
+ }
+ 
+ 
